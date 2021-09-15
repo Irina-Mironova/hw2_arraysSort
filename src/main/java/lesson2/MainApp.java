@@ -1,3 +1,7 @@
+package lesson2;
+
+import lesson2.MyArrayList;
+
 import java.util.Random;
 
 public class MainApp {
@@ -23,6 +27,13 @@ public class MainApp {
         System.out.println("BubbleSortOptimized:" + (System.currentTimeMillis() - start_time) + "ms");
         mal.clear();
 
+        for (int i = 0; i < n; i++) {
+            mal.add(random.nextInt(100));
+        }
+        start_time = System.currentTimeMillis();
+        mal.selectionSort();
+        System.out.println("SelectionSort:" + (System.currentTimeMillis() - start_time) + "ms");
+        mal.clear();
 
         for (int i = 0; i < n; i++) {
             mal.add(random.nextInt(100));
@@ -30,14 +41,9 @@ public class MainApp {
         start_time = System.currentTimeMillis();
         mal.insertionSort();
         System.out.println("InsertionSort:" + (System.currentTimeMillis() - start_time) + "ms");
-        mal.clear();
 
 
-        for (int i = 0; i < n; i++) {
-            mal.add(random.nextInt(100));
-        }
-        start_time = System.currentTimeMillis();
-        mal.selectionSort();
-        System.out.println("SelectionSort:" + (System.currentTimeMillis() - start_time) + "ms");
+
+
     }
 }

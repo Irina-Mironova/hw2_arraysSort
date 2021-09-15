@@ -1,3 +1,5 @@
+package lesson2;
+
 public class MyArrayList<T extends Comparable<T>> {
     private T[] list;
     private int size;

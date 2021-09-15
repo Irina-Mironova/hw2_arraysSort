@@ -1,3 +1,7 @@
+package lesson2;
+
+import lesson2.MyArrayList;
+
 public class MySortedArrayList<T extends Comparable<T>> extends MyArrayList<T> {
 
     @Override
