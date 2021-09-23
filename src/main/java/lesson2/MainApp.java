@@ -42,8 +42,12 @@ public class MainApp {
         mal.insertionSort();
         System.out.println("InsertionSort:" + (System.currentTimeMillis() - start_time) + "ms");
 
-
-
+        for (int i = 0; i < n; i++) {
+            mal.add(random.nextInt(100));
+        }
+        start_time = System.currentTimeMillis();
+        mal.quickSort();
+        System.out.println("QuickSort:" + (System.currentTimeMillis() - start_time) + "ms");
 
     }
 }
