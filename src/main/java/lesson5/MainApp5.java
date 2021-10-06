@@ -12,9 +12,12 @@ public class MainApp5 {
     public static void main(String[] args) {
 
         //возведение в степень с помощью рекурсии:
+
+        System.out.println(recDegree(255, 1));
         System.out.println(recDegree(2, 5));
         System.out.println(recDegree(3, 2));
         System.out.println(recDegree(3, 1));
+
 
         System.out.println();
         System.out.println("Задача2:");
@@ -28,12 +31,7 @@ public class MainApp5 {
         if (b == 0) {
             return 1;
         }
-        if (b == 1) {
-            return a;
-        } else {
-            return recDegree(a, b - 1) * a;
-        }
-
+          return recDegree(a, b - 1) * a;
     }
 
 
